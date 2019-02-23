@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="passWord" value="123$abcZY"/>
+    <parameter name="item" value="iPhone"/>
+    <parameter name="userName" value="shiblee_1986@outlook.com"/>
+    <classes>
+      <class name="testcases.ValidateSearchBox">
+        <methods>
+          <include name="validateSearchButton"/>
+          <include name="getBrowser"/>
+          <include name="getSetup"/>
+          <include name="segregateTests"/>
+          <include name="validateSearchBox"/>
+        </methods>
+      </class> <!-- testcases.ValidateSearchBox -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
