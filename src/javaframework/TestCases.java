@@ -186,4 +186,9 @@ public class TestCases {
 		}
 
 	}
+
+	public void endTest() {
+		driver.close();
+		driver.quit();
+	}
 }

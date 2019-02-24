@@ -10,12 +10,12 @@ import testpages.Header;
 
 public class ItemCategoryDropDown extends BaseTest {
 
-	Header h = new Header(driver);
+	Header header = new Header(driver);
 
 	@Test
 	public List<String> getItemCategoryDropDownList() {
 
-		List<WebElement> itemCatDdL = h.getItemCategories();
+		List<WebElement> itemCatDdL = header.getItemCategories();
 		List<String> stringItemCatDdl = new ArrayList<String>();
 
 		for (WebElement w : itemCatDdL) {
